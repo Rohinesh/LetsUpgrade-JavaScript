@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Grade System</title>
+</head>
+<body>
+<h1>Grade System</h1>
+
+<form method="post">
+	Enter your Marks:<input type="number" id="number">
+	<input type="button" value="result" onclick="GetResult()" name="find">
+	<div style="margin-top: 10px;" id="result"></div>
+</form>
+<script>
+	
+function GetResult() {
+	// body...
+
+  var marks=document.getElementById('number').value
+
+  if (marks>70) {
+  	document.getElementById('result').innerHTML =" Marks are "+ marks +" and Grade is A+"
+  }else if (marks<70 && marks >60) {
+  	document.getElementById('result').innerHTML =" Marks are "+ marks +" and Grade is A"
+  }else if (marks<60 && marks >50) {
+  	document.getElementById('result').innerHTML =" Marks are "+ marks +" and Grade is B"
+  }else if (marks<50 && marks >40) {
+  	document.getElementById('result').innerHTML =" Marks are "+ marks +" and Grade is C"
+  }else{
+  	document.getElementById('result').innerHTML =" Marks are "+ marks +" Sorry Try Next Time"
+  }
+
+}
+
+</script>
+
+
+
+</body>
+</html>

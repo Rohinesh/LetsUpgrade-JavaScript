@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Operating System</title>
+</head>
+<body>
+<h1>Operating System Name And Version</h1>
+<form method="post">
+	Enter OS Name :<input type="text" id="os" >
+	
+	<input type="button" value="Submit" onclick="osDetail()" name="find">
+	<div style="margin-top: 10px;" id="result"></div>
+</form>
+
+<script>
+	function osDetail() {
+		// body...
+       var osname=document.getElementById('os').value
+      
+       if (osname=='Window 7') {
+         document.getElementById('result').innerHTML = ' The Operating System Window '+' and Version is 7';
+       }else if (osname=='Android 9') {
+       	 document.getElementById('result').innerHTML = ' The Operating System Android '+' and Version is 9';
+       }else if (osname=='Apple 3') {
+       	 document.getElementById('result').innerHTML = ' The Operating System Apple '+' and Version is 3';
+       }else if (osname=='Window 8') {
+       	 document.getElementById('result').innerHTML = ' The Operating System Window '+' and Version is 8';
+       }else if (osname=='Window 9') {
+       	 document.getElementById('result').innerHTML = ' The Operating System Window '+' and Version is 9';
+       }else if (osname=='Window 10') {
+       	 document.getElementById('result').innerHTML = ' The Operating System Window '+' and Version is 10';
+       }else{
+       	 document.getElementById('result').innerHTML = 'Enter Valid OS Name and Version';
+       }
+
+
+
+	}
+
+
+
+
+</script>
+
+</body>
+</html>

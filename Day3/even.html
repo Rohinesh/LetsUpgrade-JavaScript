@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Even and Odd</title>
+	<meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<h1>Even and odd number</h1>
+
+<form method="post">
+	Enter Number:<input type="number" id="number">
+	<input type="button" value="Even or Odd" onclick="EvenOdd()" name="find">
+    <div style="margin-top: 10px;" id="result"></div>
+
+</form>
+
+
+<script>
+function EvenOdd() {
+	// body...
+
+var number=document.getElementById('number').value
+
+if (number%2==0) {
+	document.getElementById('result').innerHTML = number + ' is an Even number';
+}else{
+	document.getElementById('result').innerHTML = number + ' is an Odd number';	
+}
+
+
+}
+
+
+</script>
+
+</body>
+</html>
